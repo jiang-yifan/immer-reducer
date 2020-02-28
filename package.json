@@ -1,44 +1,48 @@
 {
-    "name": "immer-reducer",
-    "version": "0.7.6",
-    "description": "",
-    "main": "lib/immer-reducer.js",
-    "types": "lib/immer-reducer.d.ts",
-    "repository": {
-        "url": "https://github.com/epeli/immer-reducer"
-    },
-    "scripts": {
-        "test": "npm run dtslint && jest",
-        "build": "tsc --project tsconfig.build.json && rm -rf lib && mv build/src lib && rm -rf build",
-        "clean": "rm -rf lib build",
-        "dtslint": "tslint --project tsconfig.dtslint.json",
-        "prepublishOnly": "npm run test && npm run build"
-    },
-    "keywords": [
-        "typescript",
-        "immer"
-    ],
-    "author": "",
-    "license": "ISC",
-    "files": [
-        "lib"
-    ],
-    "devDependencies": {
-        "@testing-library/react": "^8.0.4",
-        "@types/jest": "^24.0.15",
-        "@types/react": "^16.8.22",
-        "@types/react-dom": "^16.8.4",
-        "@types/redux": "^3.6.0",
-        "dtslint": "^0.8.0",
-        "jest": "^24.8.0",
-        "prettier": "^1.18.2",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
-        "redux": "^4.0.1",
-        "ts-jest": "^24.0.2",
-        "typescript": "~3.5.2"
-    },
-    "dependencies": {
-        "immer": "^1.4.0 || ^2.0.0 || ^3.0.0"
-    }
+  "name": "@jiang-yifan/immer-reducer",
+  "version": "0.7.8",
+  "description": "Create terse type-safe Redux and `useReducer` Hook reducers using [Immer](https://github.com/mweststrate/immer) and Typescript!",
+  "main": "lib/immer-reducer.js",
+  "types": "lib/immer-reducer.d.ts",
+  "repository": {
+    "url": "git+https://github.com/epeli/immer-reducer.git"
+  },
+  "scripts": {
+    "test": "npm run dtslint && jest",
+    "build": "tsc --project tsconfig.build.json && rm -rf lib && mv build/src lib && rm -rf build",
+    "clean": "rm -rf lib build",
+    "dtslint": "tslint --project tsconfig.dtslint.json",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "immer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@testing-library/react": "^8.0.4",
+    "@types/jest": "^24.0.15",
+    "@types/react": "^16.8.22",
+    "@types/react-dom": "^16.8.4",
+    "@types/redux": "^3.6.0",
+    "dtslint": "^0.8.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "redux": "^4.0.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "~3.5.2"
+  },
+  "dependencies": {
+    "immer": "^1.4.0 || ^2.0.0 || ^3.0.0 || ^5.00"
+  },
+  "bugs": {
+    "url": "https://github.com/epeli/immer-reducer/issues"
+  },
+  "homepage": "https://github.com/epeli/immer-reducer#readme"
 }
